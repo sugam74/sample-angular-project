@@ -4,11 +4,11 @@ jobs:
     branches:
       only:
         - master
-  build:
-    machine:
-      image: ubuntu-1604:201903-01
-    steps:
-      - checkout
-      - run:
-          name: "Testing"
-          command: echo "Hi"
+  # build:
+  #   machine:
+  #     image: ubuntu-1604:201903-01
+  #   steps:
+  #     - checkout
+  #     - run:
+  #         name: "Testing"
+  #         command: echo "Hi"
