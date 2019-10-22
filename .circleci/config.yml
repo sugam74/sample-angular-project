@@ -10,7 +10,6 @@ jobs:
     branches:
       only:
         - master
-        - /rc-.*/
     steps:
-      - run: make test
-      - run: make
+      - run: "Testing"
+        command: echo "Hi"
