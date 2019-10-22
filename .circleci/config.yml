@@ -32,7 +32,7 @@ jobs:
       # Run lint!
       - run: npm run lint
       # Run build!
-      - run: npm run build:prod
+      - run: npm run build
 
       # Prepare build zip
       - run: cd dist/app && zip -r ../../build.zip  ./
