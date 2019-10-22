@@ -2,16 +2,11 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.16.3
-    working_directory: ~/sample-angular-project
-    environment:
-      FOO: bar
-    #parallelism: 3
-    #resource_class: large
     branches:
       only:
         - master
     steps:
       - run:
-          name: "Npm install"
+          name: "Build the application"
           #command: npm install
           command: npm run build
