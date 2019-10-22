@@ -14,3 +14,4 @@ jobs:
       - run:
           name: "Npm install"
           command: npm install
+          command: npm run build
