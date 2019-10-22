@@ -12,5 +12,5 @@ jobs:
         - master
     steps:
       - run:
-        name: "Testing"
-        command: npm install
+          name: "Npm install"
+          command: npm install
