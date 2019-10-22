@@ -7,7 +7,6 @@ jobs:
       FOO: bar
     #parallelism: 3
     #resource_class: large
-    working_directory: ~/sample-angular-project
     branches:
       only:
         - master
