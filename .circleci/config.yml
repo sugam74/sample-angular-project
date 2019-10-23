@@ -11,6 +11,10 @@ jobs:
       # - image: circleci/mongo:3.4.4
 
     working_directory: ~/repo
+    branches:
+      only:
+        - development
+        - master
 
     steps:
       - checkout
@@ -35,8 +39,8 @@ jobs:
       - run: npm run build
 
       # Prepare build zip
-      - run: cd dist/sample-angular-project && zip -r ../../build.zip  ./
+      - run: cd dist/sample-angular-project && zip -r ../../sample-angular-projecr.zip  ./
 
       # Store build
       - store_artifacts:
-          path: build.zip
+          path: sample-angular-projecr.zip
